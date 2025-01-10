@@ -31,7 +31,7 @@
         display: flex;
         justify-content: space-between;
         width: 500px;
-        margin: 0 auto;
+        margin: 5px auto;
         transition: all 500ms ease;
     }
 
