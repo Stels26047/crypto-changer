@@ -8,6 +8,10 @@
             convert:{
                 type: Function,
                 required: true
+            },
+            favorite:{
+                type:Function,
+                required: true
             }
         }
     }
@@ -16,6 +20,7 @@
 <template>
   <input type="number" @input="changeAmount($event.target.value)" placeholder="Введите число"><br>
   <button @click="convert()">Конвертировать</button>
+  <button @click="favorite()" className="fav-button">В избранное</button>
 </template>
 
 <style scoped>
@@ -42,5 +47,15 @@
         background: #1a032d;
         border: 0;
         border-radius: 3px;
+        transition: transform 500ms ease;
     }
+
+    button:hover{
+        transform:scale(1.05,1);
+    }
+
+    button.fav-button{
+        margin-left: 20px;
+    }
+
 </style>
