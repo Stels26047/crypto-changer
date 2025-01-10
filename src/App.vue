@@ -33,11 +33,13 @@
       },
 
       favorite(){
-        if(this.cryptoFirst != this.cryptoSecond){
-          this.favs.push({
-            from: this.cryptoFirst,
-            to: this.cryptoSecond
-          })
+        if( this.cryptoFirst != '' && this.cryptoSecond != ''){
+          if(this.cryptoFirst != this.cryptoSecond){
+            this.favs.push({
+              from: this.cryptoFirst,
+              to: this.cryptoSecond
+            })
+          }
         }
       },
 
